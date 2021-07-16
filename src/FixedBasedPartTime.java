@@ -7,6 +7,11 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
         this.fixedAmount = fixedAmount;
     }
 
+    public FixedBasedPartTime(String name, int age, Vehicle vehicle, int rate, int hoursWorked, int fixedAmount) {
+        super(name, age, vehicle, rate, hoursWorked);
+        this.fixedAmount = fixedAmount;
+    }
+
     public int getFixedAmount() {
         return fixedAmount;
     }

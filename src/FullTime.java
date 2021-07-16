@@ -8,6 +8,12 @@ public class FullTime extends Employee implements IPrintable {
         this.salary = salary;
     }
 
+    public FullTime(String name, int age, Vehicle vehicle, int bonus, int salary) {
+        super(name, age, vehicle);
+        this.bonus = bonus;
+        this.salary = salary;
+    }
+
     public int getBonus() {
         return bonus;
     }

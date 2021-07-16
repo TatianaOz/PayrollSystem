@@ -25,6 +25,12 @@ public abstract class PartTime extends Employee implements IPrintable {
         this.hoursWorked = hoursWorked;
     }
 
+    public PartTime(String name, int age, Vehicle vehicle, int rate, int hoursWorked) {
+        super(name, age, vehicle);
+        this.rate = rate;
+        this.hoursWorked = hoursWorked;
+    }
+
     @Override
     public void printMyData() {
         super.printMyData();

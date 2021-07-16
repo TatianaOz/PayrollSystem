@@ -6,6 +6,10 @@ public class Intern extends Employee implements IPrintable {
         super(name, age);
         this.schoolName = schoolName;
     }
+    public Intern(String name, int age, Vehicle vehicle, String schoolName) {
+        super(name, age, vehicle);
+        this.schoolName = schoolName;
+    }
 
     public String getSchoolName() {
         return schoolName;

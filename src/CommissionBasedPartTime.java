@@ -7,6 +7,11 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable {
         this.commission = commission;
     }
 
+    public CommissionBasedPartTime(String name, int age,Vehicle vehicle, int rate, int hoursWorked, int commission) {
+        super(name, age, vehicle, rate, hoursWorked);
+        this.commission = commission;
+    }
+
     public int getCommission() {
         return commission;
     }
