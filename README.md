@@ -1,4 +1,11 @@
-# final_project_test
+# Payroll System
+The figure 1 shows Payroll System which you should develop as your final project assignment. 
+
+Class Vehicle is now a superclass of classes Car and Motorcycle. Class PartTime is now a superclass of CommissionBasedPartTime and FixedBasedPartTime. 
+
+![Screen Shot 2021-07-16 at 7 59 00 AM](https://user-images.githubusercontent.com/84790644/125944294-e8fd7aa9-4abc-4400-9ab0-5399a26ba685.png)
+
+The code to be produced
 
 You are supposed to write your program according to the given diagram. You should take the following into account: 
 
