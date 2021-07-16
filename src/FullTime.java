@@ -31,6 +31,10 @@ public class FullTime extends Employee implements IPrintable {
 
     @Override
     public void printMyData() {
-        //todo add implementation
+        super.printMyData();
+        System.out.println("Employee is Full Time" +
+                "\n -- Salary: " + salary +
+                "\n -- Bonus: " + bonus +
+                "\n -- Earnings: " + calcEarnings());
     }
 }

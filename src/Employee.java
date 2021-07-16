@@ -48,5 +48,6 @@ public abstract class Employee implements IPrintable {
             vehicle.printMyData();
         else
             System.out.println("Employee has no Vehicle registered");
+
     }
 }

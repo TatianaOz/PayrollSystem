@@ -27,7 +27,14 @@ public abstract class PartTime extends Employee implements IPrintable {
 
     @Override
     public void printMyData() {
-// todo add implementation
+        super.printMyData();
+        if (this instanceof FixedBasedPartTime)
+            System.out.println("Employee is Part Time / Fixed Amt" );
+        else
+            System.out.println("Employee is Part Time / Commissioned" );
+        System.out.println("-- Rate: " + rate +
+                "\n-- Hours Worked: " + hoursWorked);
     }
+
 
 }

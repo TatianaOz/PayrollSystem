@@ -22,6 +22,8 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable {
 
     @Override
     public void printMyData() {
-        //todo add implementation
+        super.printMyData();
+        System.out.println("-- Commission: " + commission + "%" +
+                "\n--Earnings: " + calcEarnings());
     }
 }

@@ -22,6 +22,8 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
 
     @Override
     public void printMyData() {
-        //todo add implementation
+        super.printMyData();
+        System.out.println("-- Fixed Amt: " + fixedAmount +
+                "\n--Earnings: " + calcEarnings());
     }
 }
