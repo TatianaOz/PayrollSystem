@@ -24,9 +24,9 @@ public abstract class Vehicle implements IPrintable{
         this.plate = plate;
     }
 
-//    @Override
-//    public void printMyData() {
-//       System.out.println("Employee has no Vehicle registered");
-//    }
+    @Override
+    public void printMyData() {
+       System.out.println("-- make: " + make + "\n-- plate: " + plate);
+    }
 
 }

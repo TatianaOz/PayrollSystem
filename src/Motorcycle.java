@@ -6,6 +6,7 @@ public class Motorcycle extends Vehicle implements IPrintable{
 
     @Override
     public void printMyData() {
-        //todo add implementation
+        super.printMyData();
+        //todo add additional attributes and print it
     }
 }
