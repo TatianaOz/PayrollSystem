@@ -33,8 +33,20 @@ public abstract class Employee implements IPrintable {
         this.vehicle = vehicle;
     }
 
+    public Employee(String name, int age){
+        this.age = age;
+        this.name = name;
+        this.vehicle = null;
+    }
+
     @Override
     public void printMyData() {
-        //todo add implementation
+        System.out.println("Name: " + name
+                + "\nYear of Birth: " + calcBirthYear()
+        );
+        if (vehicle instanceof Motorcycle || vehicle instanceof Car)
+            vehicle.printMyData();
+        else
+            System.out.println("Employee has no Vehicle registered");
     }
 }

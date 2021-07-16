@@ -27,6 +27,14 @@ public abstract class PartTime extends Employee implements IPrintable {
 
     @Override
     public void printMyData() {
-        //todo add implementation
+        this.toString();
+    }
+
+    @Override
+    public String toString() {
+        return "PartTime{" +
+                "rate=" + rate +
+                ", hoursWorked=" + hoursWorked +
+                '}';
     }
 }

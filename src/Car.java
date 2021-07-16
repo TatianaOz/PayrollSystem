@@ -6,6 +6,11 @@ public class Car extends Vehicle implements IPrintable{
 
     @Override
     public void printMyData() {
-        //todo add implementation
+        this.toString();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
