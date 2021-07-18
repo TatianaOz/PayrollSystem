@@ -12,8 +12,8 @@ public class Motorcycle extends Vehicle implements IPrintable{
     @Override
     public void printMyData() {
         super.printMyData();
-        System.out.println("-- Has sidecar: " + sideCar
-                + "\n-- Has Helmet: " + helmet
+        System.out.println("-- Has sidecar: " + (sideCar ? "Yes" : "No")
+                + "\n-- Has Helmet: " + (helmet ? "Yes" : "No")
         );
     }
 }

@@ -29,7 +29,7 @@ public class Intern extends Employee implements IPrintable {
         super.printMyData();
         int earning = calcEarnings();
         totalPayRoll += earning;
-        System.out.println("Employee is Intern" +
+        System.out.println("Employee is " + this.getClass().getSimpleName() +
                 "\n -- School Name : " + schoolName +
                 "\n -- Earnings: " + earning);
     }

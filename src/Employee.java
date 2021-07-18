@@ -42,10 +42,11 @@ public abstract class Employee implements IPrintable {
         System.out.println("Name: " + name
                 + "\nYear of Birth: " + calcBirthYear()
         );
-        if (vehicle instanceof Motorcycle || vehicle instanceof Car)
+        if (vehicle instanceof Motorcycle || vehicle instanceof Car){
+            System.out.println("Employee has a "+vehicle.getClass().getSimpleName());
             vehicle.printMyData();
-        else
+        } else {
             System.out.println("Employee has no Vehicle registered");
-
+        }
     }
 }

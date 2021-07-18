@@ -18,7 +18,7 @@ public class Car extends Vehicle implements IPrintable{
     public void printMyData() {
         super.printMyData();
             System.out.println("-- Number of Dors: " + numDors
-                    + "\n-- Separate Wheel: " + separateWheel
+                    + "\n-- Separate Wheel: " + (separateWheel ? "Yes" : "No")
             );
     }
 
