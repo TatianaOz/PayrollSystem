@@ -3,10 +3,6 @@ public class Intern extends Employee implements IPrintable {
     private String schoolName;
     private static int totalPayRoll;
 
-    {
-        totalPayRoll += calcEarnings();
-    }
-
     public Intern(String name, int age, String schoolName) {
         super(name, age);
         this.schoolName = schoolName;
@@ -31,8 +27,10 @@ public class Intern extends Employee implements IPrintable {
     @Override
     public void printMyData() {
         super.printMyData();
+        int earning = calcEarnings();
+        totalPayRoll += earning;
         System.out.println("Employee is Intern" +
                 "\n -- School Name : " + schoolName +
-                "\n -- Earnings: " + calcEarnings());
+                "\n -- Earnings: " + earning);
     }
 }

@@ -34,18 +34,16 @@ public class FullTime extends Employee implements IPrintable {
     public static int getTotalPayRoll(){ return totalPayRoll; }
 
     @Override
-    public int calcEarnings() {
-        int earning = salary + bonus;
-        totalPayRoll += earning;
-        return earning;
-    }
+    public int calcEarnings() { return salary + bonus; }
 
     @Override
     public void printMyData() {
         super.printMyData();
+        int earning = calcEarnings();
+        totalPayRoll += earning;
         System.out.println("Employee is Full Time" +
                 "\n -- Salary: " + salary +
                 "\n -- Bonus: " + bonus +
-                "\n -- Earnings: " + calcEarnings());
+                "\n -- Earnings: " + earning);
     }
 }

@@ -26,16 +26,14 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
     }
 
     @Override
-    public int calcEarnings() {
-        int earning = getRate() * getHoursWorked() + fixedAmount;
-        totalPayRoll += earning;
-        return earning;
-    }
+    public int calcEarnings() { return getRate() * getHoursWorked() + fixedAmount; }
 
     @Override
     public void printMyData() {
         super.printMyData();
+        int earning = calcEarnings();
+        totalPayRoll += earning;
         System.out.println("-- Fixed Amt: " + fixedAmount +
-                "\n--Earnings: " + calcEarnings());
+                "\n--Earnings: " + earning);
     }
 }
