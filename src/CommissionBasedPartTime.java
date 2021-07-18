@@ -1,7 +1,11 @@
 public class CommissionBasedPartTime extends PartTime implements IPrintable {
 
     private int commission;
+    private static int totalPayRoll;
 
+    public static int getTotalPayRoll(){
+        return totalPayRoll;
+    }
     public CommissionBasedPartTime(String name, int age, int rate, int hoursWorked, int commission) {
         super(name, age, rate, hoursWorked);
         this.commission = commission;
@@ -22,7 +26,9 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable {
 
     @Override
     public int calcEarnings() {
-        return getRate() * getHoursWorked() + commission;
+        int result = getRate() * getHoursWorked() + commission;
+        totalPayRoll += result;
+        return result;
     }
 
     @Override
