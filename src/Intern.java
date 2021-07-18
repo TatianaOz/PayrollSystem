@@ -31,7 +31,7 @@ public class Intern extends Employee implements IPrintable {
     @Override
     public void printMyData() {
         super.printMyData();
-        System.out.println("Employee is Full Time" +
+        System.out.println("Employee is Intern" +
                 "\n -- School Name : " + schoolName +
                 "\n -- Earnings: " + calcEarnings());
     }

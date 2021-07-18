@@ -38,8 +38,8 @@ public abstract class PartTime extends Employee implements IPrintable {
             System.out.println("Employee is Part Time / Fixed Amt" );
         else
             System.out.println("Employee is Part Time / Commissioned" );
-        System.out.println("-- Rate: " + rate +
-                "\n-- Hours Worked: " + hoursWorked);
+            System.out.println("-- Rate: " + rate +
+                     "\n-- Hours Worked: " + hoursWorked);
     }
 
 

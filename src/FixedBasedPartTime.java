@@ -3,10 +3,6 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
     private int fixedAmount;
     private static int totalPayRoll;
 
-    public static int getTotalPayRoll(){
-        return totalPayRoll;
-    }
-
     public FixedBasedPartTime(String name, int age, int rate, int hoursWorked, int fixedAmount) {
         super(name, age, rate, hoursWorked);
         this.fixedAmount = fixedAmount;
@@ -25,11 +21,15 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
         this.fixedAmount = fixedAmount;
     }
 
+    public static int getTotalPayRoll(){
+        return totalPayRoll;
+    }
+
     @Override
     public int calcEarnings() {
-        int result= getRate() *getHoursWorked() + fixedAmount;
-        totalPayRoll += result;
-        return result;
+        int earning = getRate() * getHoursWorked() + fixedAmount;
+        totalPayRoll += earning;
+        return earning;
     }
 
     @Override
