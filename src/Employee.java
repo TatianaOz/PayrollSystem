@@ -23,9 +23,7 @@ public abstract class Employee implements IPrintable {
         return 2021 - age;
     }
 
-    public int calcEarnings(){
-        return 1000;
-    }
+    public int calcEarnings(){ return 1000; }
 
     public Employee(String name, int age, Vehicle vehicle){
         this.age = age;

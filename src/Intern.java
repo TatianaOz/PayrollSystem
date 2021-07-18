@@ -3,10 +3,15 @@ public class Intern extends Employee implements IPrintable {
     private String schoolName;
     private static int totalPayRoll;
 
+    {
+        totalPayRoll += calcEarnings();
+    }
+
     public Intern(String name, int age, String schoolName) {
         super(name, age);
         this.schoolName = schoolName;
     }
+
     public Intern(String name, int age, Vehicle vehicle, String schoolName) {
         super(name, age, vehicle);
         this.schoolName = schoolName;
@@ -21,6 +26,7 @@ public class Intern extends Employee implements IPrintable {
     }
 
     public static int getTotalPayRoll(){ return totalPayRoll; }
+
 
     @Override
     public void printMyData() {

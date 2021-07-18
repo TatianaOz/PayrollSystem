@@ -13,10 +13,14 @@ public class Main {
             allEmployees.get(i).printMyData();
             separador();
         }
-        System.out.println("TOTAL PAYROLL " + (FixedBasedPartTime.getTotalPayRoll() + CommissionBasedPartTime.getTotalPayRoll() + Intern.getTotalPayRoll()));
+        System.out.println("TOTAL PAYROLL " + totalPayRoll());
     }
 
     private static void separador() {
         System.out.println("-----------------------------------------------------------------------------------------");
+    }
+
+    private static int totalPayRoll(){
+        return FixedBasedPartTime.getTotalPayRoll() + CommissionBasedPartTime.getTotalPayRoll() + Intern.getTotalPayRoll();
     }
 }
