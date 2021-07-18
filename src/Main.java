@@ -12,12 +12,12 @@ public class Main {
         allEmployees.add(new FullTime("Chase", 22, new Car("kia", "AU250") ,20, 20));
         for(int i = 0; i < allEmployees.size(); i++) {
             allEmployees.get(i).printMyData();
-            separador();
+            separator();
         }
-        System.out.println("TOTAL PAYROLL " + totalPayRoll());
+        System.out.println("TOTAL PAYROLL: " + totalPayRoll() + " Canadian Dollars");
     }
 
-    private static void separador() {
+    private static void separator() {
         System.out.println("-----------------------------------------------------------------------------------------");
     }
 
