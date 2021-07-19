@@ -25,14 +25,18 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable {
 
     // Calculate the earnings
     @Override
-    public int calcEarnings() { return getRate() * getHoursWorked() + commission;}
+    public int calcEarnings() {
+        int base = getRate() * getHoursWorked();
+        return base + (base * commission / 100);
+    }
 
     // Print all class properties and Earnings
     @Override
     public void printMyData() {
         super.printMyData();
         int earning = calcEarnings();
+        int base = getRate() * getHoursWorked();
         System.out.println("-- Commission: " + commission + "%" +
-                "\n-- Earnings: " + earning);
+                "\n-- Earnings: " + earning + " (" + base + " + " + commission + "% of " + base + ")");
     }
 }

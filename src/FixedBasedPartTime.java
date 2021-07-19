@@ -33,6 +33,6 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
         super.printMyData();
         int earning = calcEarnings();
         System.out.println("-- Fixed Amt: " + fixedAmount +
-                "\n-- Earnings: " + earning);
+                "\n-- Earnings: " + earning + " (" + (getRate() * getHoursWorked()) + " + " + fixedAmount + ")");
     }
 }
