@@ -3,7 +3,9 @@ The figure 1 shows Payroll System which you should develop as your final project
 
 Class Vehicle is now a superclass of classes Car and Motorcycle. Class PartTime is now a superclass of CommissionBasedPartTime and FixedBasedPartTime. 
 
-![Screen Shot 2021-07-16 at 7 59 00 AM](https://user-images.githubusercontent.com/84790644/125944294-e8fd7aa9-4abc-4400-9ab0-5399a26ba685.png)
+
+<img width="1124" alt="Screen Shot 2021-07-18 at 6 15 32 PM" src="https://user-images.githubusercontent.com/84790644/126182277-8b23e5cd-3f9e-4f17-81e8-1bad7a75f075.png">
+
 
 The code to be produced
 
