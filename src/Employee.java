@@ -48,7 +48,7 @@ public abstract class Employee implements IPrintable {
     }
 
     // Calculate the earnings
-    public int calcEarnings(){ return 1000; }
+    public double calcEarnings(){ return 1000; }
 
     // Print all class properties
     @Override

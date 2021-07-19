@@ -1,15 +1,15 @@
 public abstract class PartTime extends Employee implements IPrintable {
 
     /* Properties */
-    private int rate;
+    private double rate;
     private int hoursWorked;
 
     /* Getters and Setters */
-    public int getRate() {
+    public double getRate() {
         return rate;
     }
 
-    public void setRate(int rate) {
+    public void setRate(double rate) {
         this.rate = rate;
     }
 
@@ -22,13 +22,13 @@ public abstract class PartTime extends Employee implements IPrintable {
     }
 
     /* Constructors */
-    public PartTime(String name, int age, int rate, int hoursWorked) {
+    public PartTime(String name, int age, double rate, int hoursWorked) {
         super(name, age);
         this.rate = rate;
         this.hoursWorked = hoursWorked;
     }
 
-    public PartTime(String name, int age, Vehicle vehicle, int rate, int hoursWorked) {
+    public PartTime(String name, int age, Vehicle vehicle, double rate, int hoursWorked) {
         super(name, age, vehicle);
         this.rate = rate;
         this.hoursWorked = hoursWorked;
@@ -42,7 +42,7 @@ public abstract class PartTime extends Employee implements IPrintable {
             System.out.println("Employee is Part Time / Fixed Amt" );
         else
             System.out.println("Employee is Part Time / Commissioned" );
-            System.out.println("-- Rate: " + rate +
+            System.out.println("-- Rate: " + String.format("%,.2f", rate) +
                      "\n-- Hours Worked: " + hoursWorked);
     }
 

@@ -27,9 +27,9 @@ public class Intern extends Employee implements IPrintable {
     @Override
     public void printMyData() {
         super.printMyData();
-        int earning = calcEarnings();
+        double earning = calcEarnings();
         System.out.println("Employee is " + this.getClass().getSimpleName() +
                 "\n -- School Name : " + schoolName +
-                "\n -- Earnings: " + earning);
+                "\n -- Earnings: " + String.format("%,.2f", earning));
     }
 }

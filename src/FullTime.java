@@ -1,34 +1,34 @@
 public class FullTime extends Employee implements IPrintable {
 
     /* Properties */
-    private int salary;
-    private int bonus;
+    private double salary;
+    private double bonus;
 
     /* Getters and Setters */
-    public int getBonus() {
+    public double getBonus() {
         return bonus;
     }
 
-    public void setBonus(int bonus) {
+    public void setBonus(double bonus) {
         this.bonus = bonus;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
     /* Constructors */
-    public FullTime(String name, int age, int bonus, int salary) {
+    public FullTime(String name, int age, double bonus, double salary) {
         super(name, age);
         this.bonus = bonus;
         this.salary = salary;
     }
 
-    public FullTime(String name, int age, Vehicle vehicle, int bonus, int salary) {
+    public FullTime(String name, int age, Vehicle vehicle, double bonus, double salary) {
         super(name, age, vehicle);
         this.bonus = bonus;
         this.salary = salary;
@@ -36,16 +36,16 @@ public class FullTime extends Employee implements IPrintable {
 
     // Calculate the Earnings
     @Override
-    public int calcEarnings() { return salary + bonus; }
+    public double calcEarnings() { return salary + bonus; }
 
     // Print all class properties and Earnings
     @Override
     public void printMyData() {
         super.printMyData();
-        int earning = calcEarnings();
+        double earning = calcEarnings();
         System.out.println("Employee is Full Time" +
-                "\n -- Salary: " + salary +
-                "\n -- Bonus: " + bonus +
-                "\n -- Earnings: " + earning + " (" + salary + " + " + bonus + ")");
+                "\n -- Salary: " + String.format("%,.2f", salary) +
+                "\n -- Bonus: " + String.format("%,.2f", bonus) +
+                "\n -- Earnings: " + String.format("%,.2f", earning) + " (" + String.format("%,.2f", salary) + " + " + String.format("%,.2f", bonus) + ")");
     }
 }

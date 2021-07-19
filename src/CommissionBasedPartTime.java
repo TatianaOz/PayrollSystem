@@ -13,20 +13,20 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable {
     }
 
     /* Constructors */
-    public CommissionBasedPartTime(String name, int age, int rate, int hoursWorked, int commission) {
+    public CommissionBasedPartTime(String name, int age, double rate, int hoursWorked, int commission) {
         super(name, age, rate, hoursWorked);
         this.commission = commission;
     }
 
-    public CommissionBasedPartTime(String name, int age,Vehicle vehicle, int rate, int hoursWorked, int commission) {
+    public CommissionBasedPartTime(String name, int age,Vehicle vehicle, double rate, int hoursWorked, int commission) {
         super(name, age, vehicle, rate, hoursWorked);
         this.commission = commission;
     }
 
     // Calculate the earnings
     @Override
-    public int calcEarnings() {
-        int base = getRate() * getHoursWorked();
+    public double calcEarnings() {
+        double base = getRate() * getHoursWorked();
         return base + (base * commission / 100);
     }
 
@@ -34,9 +34,9 @@ public class CommissionBasedPartTime extends PartTime implements IPrintable {
     @Override
     public void printMyData() {
         super.printMyData();
-        int earning = calcEarnings();
-        int base = getRate() * getHoursWorked();
+        double earning = calcEarnings();
+        double base = getRate() * getHoursWorked();
         System.out.println("-- Commission: " + commission + "%" +
-                "\n-- Earnings: " + earning + " (" + base + " + " + commission + "% of " + base + ")");
+                "\n-- Earnings: " + String.format("%,.2f", earning) + " (" + String.format("%,.2f", base) + " + " + commission + "% of " + String.format("%,.2f", base) + ")");
     }
 }
