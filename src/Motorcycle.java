@@ -2,7 +2,11 @@ public class Motorcycle extends Vehicle implements IPrintable{
     private boolean sideCar;
     private boolean helmet;
 
-    public Motorcycle(String make, String plate) { super(make, plate); }
+    public Motorcycle(String make, String plate) {
+        super(make, plate);
+        sideCar = false;
+        helmet = false;
+    }
 
     public Motorcycle(String make, String plate, boolean sideCar, boolean helmet) {
         super(make, plate);

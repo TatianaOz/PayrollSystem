@@ -1,7 +1,6 @@
 public class FullTime extends Employee implements IPrintable {
     private int salary;
     private int bonus;
-    private static int totalPayRoll;
 
     public FullTime(String name, int age, int bonus, int salary) {
         super(name, age);
@@ -31,8 +30,6 @@ public class FullTime extends Employee implements IPrintable {
         this.salary = salary;
     }
 
-    public static int getTotalPayRoll(){ return totalPayRoll; }
-
     @Override
     public int calcEarnings() { return salary + bonus; }
 
@@ -40,7 +37,6 @@ public class FullTime extends Employee implements IPrintable {
     public void printMyData() {
         super.printMyData();
         int earning = calcEarnings();
-        totalPayRoll += earning;
         System.out.println("Employee is Full Time" +
                 "\n -- Salary: " + salary +
                 "\n -- Bonus: " + bonus +
