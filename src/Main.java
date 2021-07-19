@@ -27,7 +27,7 @@ public class Main {
             totalPayRoll = totalPayRoll + allEmployee.calcEarnings();
             separator();
         }
-        System.out.println("TOTAL PAYROLL: " + totalPayRoll + " Canadian Dollars");
+        System.out.println("TOTAL PAYROLL: " + String.format("%,.2f", totalPayRoll) + " Canadian Dollars");
     }
 
     // print the separator between employees
