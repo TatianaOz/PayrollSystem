@@ -1,19 +1,10 @@
 public class FullTime extends Employee implements IPrintable {
+
+    /* Properties */
     private int salary;
     private int bonus;
 
-    public FullTime(String name, int age, int bonus, int salary) {
-        super(name, age);
-        this.bonus = bonus;
-        this.salary = salary;
-    }
-
-    public FullTime(String name, int age, Vehicle vehicle, int bonus, int salary) {
-        super(name, age, vehicle);
-        this.bonus = bonus;
-        this.salary = salary;
-    }
-
+    /* Getters and Setters */
     public int getBonus() {
         return bonus;
     }
@@ -30,9 +21,24 @@ public class FullTime extends Employee implements IPrintable {
         this.salary = salary;
     }
 
+    /* Constructors */
+    public FullTime(String name, int age, int bonus, int salary) {
+        super(name, age);
+        this.bonus = bonus;
+        this.salary = salary;
+    }
+
+    public FullTime(String name, int age, Vehicle vehicle, int bonus, int salary) {
+        super(name, age, vehicle);
+        this.bonus = bonus;
+        this.salary = salary;
+    }
+
+    // Calculate the Earnings
     @Override
     public int calcEarnings() { return salary + bonus; }
 
+    // Print all class properties and Earnings
     @Override
     public void printMyData() {
         super.printMyData();

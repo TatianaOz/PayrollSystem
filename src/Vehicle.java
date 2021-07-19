@@ -1,13 +1,16 @@
 public abstract class Vehicle implements IPrintable{
 
+    /* Properties */
     private String make;
     private String plate;
 
+    /* Constructor */
     public Vehicle(String make, String plate){
         this.make = make;
         this.plate = plate;
     }
 
+    /* Getters and Setters */
     public String getMake() {
         return make;
     }
@@ -24,9 +27,10 @@ public abstract class Vehicle implements IPrintable{
         this.plate = plate;
     }
 
+    // Print all class properties
     @Override
     public void printMyData() {
-       System.out.println("-- make: " + make + "\n-- plate: " + plate);
+       System.out.println("-- Make: " + make + "\n-- Plate: " + plate);
     }
 
 }

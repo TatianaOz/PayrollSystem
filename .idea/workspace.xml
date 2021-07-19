@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="de07a1ca-7d74-4b20-8062-89f05802b180" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
@@ -10,15 +13,19 @@
       <change beforePath="$PROJECT_DIR$/out/production/PayrollSystem/FixedBasedPartTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PayrollSystem/FixedBasedPartTime.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PayrollSystem/FullTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PayrollSystem/FullTime.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PayrollSystem/Intern.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PayrollSystem/Intern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PayrollSystem/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PayrollSystem/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PayrollSystem/Motorcycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PayrollSystem/Motorcycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PayrollSystem/PartTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PayrollSystem/PartTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PayrollSystem/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PayrollSystem/Vehicle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CommissionBasedPartTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommissionBasedPartTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FixedBasedPartTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FixedBasedPartTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FullTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FullTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IPrintable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPrintable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Intern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motorcycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PartTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PartTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +37,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />

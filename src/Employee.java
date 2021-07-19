@@ -1,8 +1,10 @@
 public abstract class Employee implements IPrintable {
+    /* Properties */
     private String name;
     private int age;
     private Vehicle vehicle;
 
+    /* Getters and Setters */
     public String getName() {
         return name;
     }
@@ -19,12 +21,15 @@ public abstract class Employee implements IPrintable {
         return age;
     }
 
-    public int calcBirthYear(){
-        return 2021 - age;
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 
-    public int calcEarnings(){ return 1000; }
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
 
+    /* Constructors */
     public Employee(String name, int age, Vehicle vehicle){
         this.age = age;
         this.name = name;
@@ -37,6 +42,15 @@ public abstract class Employee implements IPrintable {
         this.vehicle = null;
     }
 
+    // Calculate the year of birth
+    public int calcBirthYear(){
+        return 2021 - age;
+    }
+
+    // Calculate the earnings
+    public int calcEarnings(){ return 1000; }
+
+    // Print all class properties
     @Override
     public void printMyData() {
         System.out.println("Name: " + name

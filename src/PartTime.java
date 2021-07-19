@@ -1,8 +1,10 @@
 public abstract class PartTime extends Employee implements IPrintable {
 
+    /* Properties */
     private int rate;
     private int hoursWorked;
 
+    /* Getters and Setters */
     public int getRate() {
         return rate;
     }
@@ -19,6 +21,7 @@ public abstract class PartTime extends Employee implements IPrintable {
         this.hoursWorked = hoursWorked;
     }
 
+    /* Constructors */
     public PartTime(String name, int age, int rate, int hoursWorked) {
         super(name, age);
         this.rate = rate;
@@ -31,6 +34,7 @@ public abstract class PartTime extends Employee implements IPrintable {
         this.hoursWorked = hoursWorked;
     }
 
+    // Print all class properties
     @Override
     public void printMyData() {
         super.printMyData();
@@ -41,6 +45,5 @@ public abstract class PartTime extends Employee implements IPrintable {
             System.out.println("-- Rate: " + rate +
                      "\n-- Hours Worked: " + hoursWorked);
     }
-
 
 }
