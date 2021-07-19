@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="de07a1ca-7d74-4b20-8062-89f05802b180" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CommissionBasedPartTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommissionBasedPartTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FixedBasedPartTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FixedBasedPartTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FullTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FullTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PartTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PartTime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
