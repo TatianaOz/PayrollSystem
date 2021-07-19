@@ -16,6 +16,10 @@ public class Main {
         allEmployees.add(new Intern("John", 23,  new Motorcycle("Yamaha", "YA34A"), "Lambton College"));
         allEmployees.add(new Intern("Mark", 22, "Lambton College"));
         allEmployees.add(new FullTime("Chase", 22, new Car("kia", "AU250") ,20, 20));
+        allEmployees.add(new FullTime("James", 31,50, 2300));
+        allEmployees.add(new FixedBasedPartTime("Jane", 33,37, 15, 50));
+        allEmployees.add(new CommissionBasedPartTime("Sam", 42 ,29, 38, 25));
+
 
         // Print data of each employee and calculate the total earnings for all employees in the list
         for(int i = 0; i < allEmployees.size(); i++) {
